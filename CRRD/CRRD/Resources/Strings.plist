@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CSCInfoEmailSubject</key>
+	<string>Corvallis ReUse information request</string>
+	<key>AboutContact</key>
+	<string>The Corvallis Reuse and Repair Directory is provided by the Corvallis Sustainability Coalition. To add an organization or service to the directory or to update information included in the directory, contact the Corvallis Sustainability Coalition using the email below.</string>
+	<key>AboutCorvallisReuse</key>
+	<string>The purpose of the Corvallis Reuse and Repair Directory is to provide Corvallis and the outlying community a way to easily locate organizations that will take the following items.</string>
+	<key>AboutCorvallisReuseRecycle</key>
+	<string>Recyclable items</string>
+	<key>AboutCorvallisReuseRepair</key>
+	<string>Items for repair</string>
+	<key>AboutCorvallisReuseReuse</key>
+	<string>Reusable items that can be sold to the public as used items</string>
+	<key>ApplicationDescription</key>
+	<string>Provided by the Corvallis Sustainability Coalition</string>
+	<key>ApplicationName</key>
+	<string>Corvallis ReUse</string>
+	<key>ApplicationNameLong</key>
+	<string>The Corvallis Reuse and Repair Directory</string>
+	<key>CorvallisLat</key>
+	<string>44.569949</string>
+	<key>CorvallisLong</key>
+	<string>-123.278285</string>
+	<key>CorvallisZoomLevel</key>
+	<integer>10</integer>
+	<key>errorGeneral</key>
+	<string>Please try the app later or access the Corvallis ReUse directory online. Thank you for your patience.</string>
+	<key>errorMissingData</key>
+	<string>The directory data cannot be retrieved.</string>
+	<key>errorUnrecognized</key>
+	<string>There was an unrecognized error.</string>
+	<key>errorOpenLink</key>
+	<string>Unable to open</string>
+	<key>errorTitle</key>
+	<string>Service Unavailable</string>
+	<key>AboutActivityLabel</key>
+	<string>About Corvallis ReUse</string>
+	<key>BusinessDetailsActivityLabel</key>
+	<string>Organization Details</string>
+	<key>BusinessListActivityLabel</key>
+	<string>Organizations</string>
+	<key>CategoryListActivityLabel</key>
+	<string>Categories</string>
+	<key>ContactActivityLabel</key>
+	<string>Contact</string>
+	<key>ContactCSCLabel</key>
+	<string>Contact Corvallis ReUse</string>
+	<key>ErrorActivityLabel</key>
+	<string>Error</string>
+	<key>MainActivityLabel</key>
+	<string>Corvallis ReUse</string>
+	<key>RecyclingInfoActivityLabel</key>
+	<string>Corvallis Recycling Services</string>
+	<key>RepairCategoryName</key>
+	<string>Repair Items</string>
+	<key>SubcategoryListActivityLabel</key>
+	<string>Categories</string>
+	<key>WebViewerActivityLabel</key>
+	<string>View PDF</string>
+	<key>CSCFacebook</key>
+	<string>https://www.facebook.com/SustainableCorvallis/</string>
+	<key>CSCOnline</key>
+	<string>http://sustainablecorvallis.org/</string>
+	<key>CSCTwitter</key>
+	<string>https://twitter.com/sustaincorv</string>
+	<key>GDocViewer</key>
+	<string>https://docs.google.com/gview?embedded=true%26url=</string>
+	<key>CSCEmail</key>
+	<string>info@sustainablecorvallis.org</string>
+	<key>APIBusiness</key>
+	<string>http://app.sustainablecorvallis.org/reuseDB</string>
+	<key>APIRecycle</key>
+	<string>http://app.sustainablecorvallis.org/recycleXML</string>
+</dict>
+</plist>

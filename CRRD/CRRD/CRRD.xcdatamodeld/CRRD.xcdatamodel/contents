@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11759" systemVersion="16D32" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Business" representedClassName="BusinessMO" syncable="YES" codeGenerationType="class">
+        <attribute name="address_line_1" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="address_line_2" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="city" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="phone" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="recycleBusiness" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="state" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="website" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="zip" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <relationship name="category" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Category" inverseName="business" inverseEntity="Category" syncable="YES"/>
+        <relationship name="link" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Link" inverseName="business" inverseEntity="Link" syncable="YES"/>
+        <relationship name="subcategory" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Subcategory" inverseName="business" inverseEntity="Subcategory" syncable="YES"/>
+    </entity>
+    <entity name="Category" representedClassName="CategoryMO" syncable="YES" codeGenerationType="class">
+        <attribute name="categoryName" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="business" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Business" inverseName="category" inverseEntity="Business" syncable="YES"/>
+        <relationship name="subcategory" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Subcategory" inverseName="category" inverseEntity="Subcategory" syncable="YES"/>
+    </entity>
+    <entity name="DatabaseVersion" representedClassName="DatabaseVersionMO" syncable="YES" codeGenerationType="class">
+        <attribute name="version_id" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Link" representedClassName="LinkMO" syncable="YES" codeGenerationType="class">
+        <attribute name="linkName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="uri" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="business" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Business" inverseName="link" inverseEntity="Business" syncable="YES"/>
+    </entity>
+    <entity name="Subcategory" representedClassName="SubcategoryMO" syncable="YES" codeGenerationType="class">
+        <attribute name="subCategoryName" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="business" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Business" inverseName="subcategory" inverseEntity="Business" syncable="YES"/>
+        <relationship name="category" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Category" inverseName="subcategory" inverseEntity="Category" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Business" positionX="-5456" positionY="-2205" width="128" height="270"/>
+        <element name="Category" positionX="-5697" positionY="-2088" width="128" height="88"/>
+        <element name="DatabaseVersion" positionX="-5454" positionY="-1908" width="128" height="60"/>
+        <element name="Link" positionX="-5697" positionY="-2196" width="117" height="88"/>
+        <element name="Subcategory" positionX="-5699" positionY="-1935" width="128" height="88"/>
+    </elements>
+</model>
