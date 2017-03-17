@@ -26,7 +26,7 @@ class MainViewController: UIViewController {
     lazy private var strings: [String: Any] = Utils.getStrings()
     
     override func viewDidAppear(_ animated: Bool) {
-        //UpdateDataModel.updateDataModel()
+        UpdateDataModel.updateDataModel()
         loadData()
     }
     
@@ -135,7 +135,6 @@ class MainViewController: UIViewController {
                 let fetchRequestError = ErrorHandler.errorAlertAction(strings["errorTitle"] as! String, strings["errorUnrecognized"] as! String)
                 present(fetchRequestError, animated: true, completion:  nil)
             }
-            //context.reset() //Free from memory
         }
     }
 }

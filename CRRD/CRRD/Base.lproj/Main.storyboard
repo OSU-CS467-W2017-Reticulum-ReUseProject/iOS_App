@@ -746,7 +746,7 @@
             <objects>
                 <navigationController autoresizesArchivedViewToFullSize="NO" automaticallyAdjustsScrollViewInsets="NO" id="mbr-1d-QWT" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleAspectFit" layoutMarginsFollowReadableWidth="YES" barStyle="black" translucent="NO" id="4CS-eH-utX">
+                    <navigationBar key="navigationBar" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleAspectFit" misplaced="YES" layoutMarginsFollowReadableWidth="YES" barStyle="black" translucent="NO" id="4CS-eH-utX">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.30980392156862746" green="0.36078431372549019" blue="0.14509803921568626" alpha="1" colorSpace="calibratedRGB"/>
@@ -773,7 +773,7 @@
         <image name="three_dot_menu" width="44" height="44"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="xaX-zP-iKh"/>
-        <segue reference="Zjj-Ug-TUG"/>
+        <segue reference="gvl-rZ-k2f"/>
+        <segue reference="1Xy-MN-DCp"/>
     </inferredMetricsTieBreakers>
 </document>

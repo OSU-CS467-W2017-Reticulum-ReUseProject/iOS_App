@@ -21,7 +21,7 @@ class Category: NSObject {
         self.subcategoryList = subcategoryList
     }
     
-    //Initialize with another link
+    //Initialize with another category object
     init(category: Category) {
         self.name = category.name
         for item in category.subcategoryList {

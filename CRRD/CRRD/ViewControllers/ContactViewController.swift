@@ -9,7 +9,7 @@
 import UIKit
 import MessageUI
 
-class ContactViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, MFMailComposeViewControllerDelegate {
+class ContactViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, MFMailComposeViewControllerDelegate, UIPopoverPresentationControllerDelegate {
     
     //Holds CSC mail, online, facebook ,and twitter details used in the table view cells.
     private struct ContactDetails {
@@ -99,7 +99,16 @@ class ContactViewController: UIViewController, UITableViewDataSource, UITableVie
         
         //Add call and cancel actions to the alert menu
         alertMenu.addAction(linkAction)
-        present(alertMenu, animated: true, completion:  nil)
+        
+        //If the device is an iPad, the alert menu needs to be displayed using the PopoverPresentationController
+        if let alertMenuPopover = alertMenu.popoverPresentationController {
+            //Setup PopoverPresentationController
+            alertMenuPopover.sourceView = self.view
+            alertMenuPopover.sourceRect = CGRect(x: self.view.bounds.midX, y: 0, width: 0, height: 0) //Center alert menu
+            alertMenuPopover.permittedArrowDirections = .up
+        }
+        
+        self.present(alertMenu, animated: true, completion:  nil)
     }
 
     //Action performed when CSC email link is pressed

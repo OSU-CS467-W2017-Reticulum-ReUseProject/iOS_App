@@ -10,7 +10,7 @@ import UIKit
 import MessageUI
 import CoreData
 
-class BusinessDetailsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class BusinessDetailsViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UIPopoverPresentationControllerDelegate {
 
     //Holds the business details used in the table view cells below
     private struct BusinessDetails {
@@ -176,6 +176,14 @@ class BusinessDetailsViewController: UIViewController, UITableViewDataSource, UI
         
         //Add call and cancel actions to the alert menu
         alertMenu.addAction(linkAction)
+        
+        //If the device is an iPad, the alert menu needs to be displayed using the PopoverPresentationController
+        if let alertMenuPopover = alertMenu.popoverPresentationController {
+            //Setup PopoverPresentationController
+            alertMenuPopover.sourceView = self.view
+            alertMenuPopover.sourceRect = CGRect(x: self.view.bounds.midX, y: 0, width: 0, height: 0) //Center alert menu
+            alertMenuPopover.permittedArrowDirections = .up
+        }
         
         present(alertMenu, animated: true, completion:  nil)
     }
