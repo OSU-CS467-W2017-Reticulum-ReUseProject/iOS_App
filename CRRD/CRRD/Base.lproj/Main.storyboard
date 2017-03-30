@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="mbr-1d-QWT">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -20,77 +20,93 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="64" width="414" height="672"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="TaX-S1-c5h">
-                                <rect key="frame" x="25" y="25" width="325" height="553"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="252" verticalHuggingPriority="252" horizontalCompressionResistancePriority="752" verticalCompressionResistancePriority="752" usesAttributedText="YES" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="85G-NC-qED" userLabel="ApplicationNameLong">
+                                <rect key="frame" x="30" y="10" width="354" height="58.333333333333329"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="The Corvallis Reuse and Repair Directory">
+                                        <attributes>
+                                            <font key="NSFont" size="25" name=".SFNSText"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <color key="highlightedColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" layoutMarginsFollowReadableWidth="YES" text="Provided by the Corvallis Sustainability Coalition" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="none" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9jE-2w-s3Z" userLabel="ApplicationDescription">
+                                <rect key="frame" x="30" y="78.333333333333329" width="354" height="17"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="4zS-pv-Ee3">
+                                <rect key="frame" x="25" y="110.33333333333331" width="364" height="541.66666666666674"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="85G-NC-qED" userLabel="ApplicationNameLong">
-                                        <rect key="frame" x="0.0" y="0.0" width="325" height="58.5"/>
-                                        <attributedString key="attributedText">
-                                            <fragment content="The Corvallis Reuse and Repair Directory">
-                                                <attributes>
-                                                    <font key="NSFont" size="25" name=".SFNSText"/>
-                                                    <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                </attributes>
-                                            </fragment>
-                                        </attributedString>
-                                        <color key="highlightedColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Provided by the Corvallis Sustainability Coalition" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="none" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9jE-2w-s3Z" userLabel="ApplicationDescription">
-                                        <rect key="frame" x="0.0" y="68.5" width="325" height="41"/>
-                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <stackView contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="QZZ-BM-Rmw">
-                                        <rect key="frame" x="0.0" y="119.5" width="325" height="433.5"/>
-                                        <subviews>
-                                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zb5-ru-C4E" userLabel="RepairButton">
-                                                <rect key="frame" x="0.0" y="0.0" width="325" height="138"/>
-                                                <color key="backgroundColor" red="0.30980392159999998" green="0.36078431370000003" blue="0.1450980392" alpha="1" colorSpace="calibratedRGB"/>
-                                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
-                                                <state key="normal" title="REPAIR">
-                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="repairButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HTU-5n-96x"/>
-                                                </connections>
-                                            </button>
-                                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gho-C8-Upg" userLabel="ReuseButton">
-                                                <rect key="frame" x="0.0" y="148" width="325" height="137.5"/>
-                                                <color key="backgroundColor" red="0.30980392159999998" green="0.36078431370000003" blue="0.1450980392" alpha="1" colorSpace="calibratedRGB"/>
-                                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
-                                                <state key="normal" title="REUSE">
-                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                </state>
-                                                <connections>
-                                                    <segue destination="D8d-rp-vsZ" kind="show" id="dnS-4T-cKt"/>
-                                                </connections>
-                                            </button>
-                                            <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OFA-BS-i5H" userLabel="RecycleButton">
-                                                <rect key="frame" x="0.0" y="295.5" width="325" height="138"/>
-                                                <color key="backgroundColor" red="0.30980392159999998" green="0.36078431370000003" blue="0.1450980392" alpha="1" colorSpace="calibratedRGB"/>
-                                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
-                                                <state key="normal" title="RECYCLE">
-                                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="recycleButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0si-Ik-vWC"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
-                                    </stackView>
+                                    <button contentMode="scaleToFill" verticalCompressionResistancePriority="752" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zb5-ru-C4E" userLabel="RepairButton">
+                                        <rect key="frame" x="0.0" y="0.0" width="364" height="170.66666666666669"/>
+                                        <color key="backgroundColor" red="0.30980392159999998" green="0.36078431370000003" blue="0.1450980392" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                        <state key="normal" title="REPAIR">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="repairButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HTU-5n-96x"/>
+                                        </connections>
+                                    </button>
+                                    <button contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gho-C8-Upg" userLabel="ReuseButton">
+                                        <rect key="frame" x="0.0" y="185.66666666666671" width="364" height="170.33333333333329"/>
+                                        <color key="backgroundColor" red="0.30980392159999998" green="0.36078431370000003" blue="0.1450980392" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                        <state key="normal" title="REUSE">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="D8d-rp-vsZ" kind="show" id="dnS-4T-cKt"/>
+                                        </connections>
+                                    </button>
+                                    <button contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OFA-BS-i5H" userLabel="RecycleButton">
+                                        <rect key="frame" x="0.0" y="371" width="364" height="170.66666666666674"/>
+                                        <color key="backgroundColor" red="0.30980392159999998" green="0.36078431370000003" blue="0.1450980392" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                        <state key="normal" title="RECYCLE">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="recycleButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0si-Ik-vWC"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" red="0.59999999999999998" green="0.69803921568627447" blue="0.27843137254901962" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="TaX-S1-c5h" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="25" id="2vi-rh-ZAx"/>
-                            <constraint firstItem="TaX-S1-c5h" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="25" id="KC7-7P-O2F"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="TaX-S1-c5h" secondAttribute="bottom" constant="25" id="XcS-Fw-lVx"/>
-                            <constraint firstAttribute="trailing" secondItem="TaX-S1-c5h" secondAttribute="trailing" constant="25" id="elx-tQ-a7F"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="85G-NC-qED" secondAttribute="trailing" constant="10" id="10g-QX-dMP"/>
+                            <constraint firstItem="85G-NC-qED" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="3Tt-cF-lP8"/>
+                            <constraint firstItem="85G-NC-qED" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="B1l-OB-VcV"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="4zS-pv-Ee3" secondAttribute="bottom" constant="20" id="GAP-5E-Vx3"/>
+                            <constraint firstItem="9jE-2w-s3Z" firstAttribute="top" secondItem="85G-NC-qED" secondAttribute="bottom" constant="10" id="Nlp-cu-rqW"/>
+                            <constraint firstItem="9jE-2w-s3Z" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="QBd-h8-T9G"/>
+                            <constraint firstItem="4zS-pv-Ee3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="5" id="QMJ-hf-Jo2"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="9jE-2w-s3Z" secondAttribute="trailing" constant="10" id="kge-He-TIe"/>
+                            <constraint firstItem="4zS-pv-Ee3" firstAttribute="top" secondItem="9jE-2w-s3Z" secondAttribute="bottom" constant="15" id="y84-YF-T1M"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="4zS-pv-Ee3" secondAttribute="trailing" constant="5" id="zwN-pe-1lQ"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="uJr-2E-eWJ">
@@ -98,7 +114,7 @@
                         <rightBarButtonItems>
                             <barButtonItem style="done" id="vKy-K8-w6B">
                                 <button key="customView" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="bQP-ZY-Les" userLabel="DropDownMenu">
-                                    <rect key="frame" x="334" y="9" width="25" height="25"/>
+                                    <rect key="frame" x="369" y="9" width="25" height="25"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <state key="normal" image="three_dot_menu"/>
@@ -110,7 +126,7 @@
                             </barButtonItem>
                             <barButtonItem style="done" id="n32-bD-fuj">
                                 <button key="customView" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="GHt-U3-CxB" userLabel="HomeButton">
-                                    <rect key="frame" x="300" y="9" width="26" height="26"/>
+                                    <rect key="frame" x="335" y="9" width="26" height="26"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <state key="normal" image="home_white"/>
@@ -147,35 +163,35 @@
                         <viewControllerLayoutGuide type="bottom" id="ZkU-7m-ra3"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Xee-3u-uVZ">
-                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="64" width="414" height="672"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="About Corvallis ReUse" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="none" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PxC-Xf-1iB" userLabel="AboutActivityLabel">
-                                <rect key="frame" x="26" y="20" width="323" height="24"/>
+                                <rect key="frame" x="30" y="20" width="354" height="24"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rpt-cR-XcG" userLabel="AboutCorvallisReuseLabel">
-                                <rect key="frame" x="26" y="54" width="323" height="72"/>
+                                <rect key="frame" x="30" y="54.000000000000007" width="354" height="71.666666666666686"/>
                                 <string key="text">The purpose of the Corvallis Reuse and Repair Directory is to provide Corvallis and the outlying community a way to easily locate organizations that will take the following items.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" bounces="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="qcM-gL-2Vh">
-                                <rect key="frame" x="46" y="136" width="283" height="437"/>
+                                <rect key="frame" x="50" y="130.66666666666669" width="314" height="511.33333333333331"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="AboutDetailCell" id="qDb-0C-xby" userLabel="AboutDetailCell" customClass="DetailTableViewCell" customModule="CRRD" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="283" height="44"/>
+                                        <rect key="frame" x="0.0" y="28" width="314" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qDb-0C-xby" id="tTh-Vu-WcK">
-                                            <rect key="frame" x="0.0" y="0.0" width="283" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="314" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView contentMode="scaleToFill" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="p73-M8-5cg">
-                                                    <rect key="frame" x="0.0" y="7" width="283" height="30"/>
+                                                    <rect key="frame" x="0.0" y="7" width="314" height="30"/>
                                                     <subviews>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HDR-pt-CoI" userLabel="ImageView">
                                                             <rect key="frame" x="0.0" y="5" width="20" height="20"/>
@@ -186,8 +202,8 @@
                                                             </constraints>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Value" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bhF-P4-EH4" userLabel="LabelValue">
-                                                            <rect key="frame" x="40" y="8" width="243" height="14.5"/>
-                                                            <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                                            <rect key="frame" x="40" y="6" width="274" height="18"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                             <color key="textColor" red="0.2784313725" green="0.65098039220000004" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
@@ -222,7 +238,7 @@
                             <constraint firstItem="qcM-gL-2Vh" firstAttribute="leading" secondItem="Xee-3u-uVZ" secondAttribute="leadingMargin" constant="30" id="Q7I-nN-Y8C"/>
                             <constraint firstAttribute="trailingMargin" secondItem="qcM-gL-2Vh" secondAttribute="trailing" constant="30" id="Yhi-nd-AwJ"/>
                             <constraint firstItem="PxC-Xf-1iB" firstAttribute="top" secondItem="bCJ-48-akt" secondAttribute="bottom" constant="20" id="Z43-a1-Aeo"/>
-                            <constraint firstItem="qcM-gL-2Vh" firstAttribute="top" secondItem="rpt-cR-XcG" secondAttribute="bottom" constant="10" id="cRE-jQ-6JO"/>
+                            <constraint firstItem="qcM-gL-2Vh" firstAttribute="top" secondItem="rpt-cR-XcG" secondAttribute="bottom" constant="5" id="cRE-jQ-6JO"/>
                             <constraint firstItem="ZkU-7m-ra3" firstAttribute="top" secondItem="qcM-gL-2Vh" secondAttribute="bottom" constant="30" id="dKq-e6-1tN"/>
                             <constraint firstItem="PxC-Xf-1iB" firstAttribute="leading" secondItem="Xee-3u-uVZ" secondAttribute="leadingMargin" constant="10" id="gVc-AG-awO"/>
                             <constraint firstAttribute="trailingMargin" secondItem="PxC-Xf-1iB" secondAttribute="trailing" constant="10" id="twT-5F-sJT"/>
@@ -233,7 +249,7 @@
                         <rightBarButtonItems>
                             <barButtonItem id="LQJ-3r-bOU">
                                 <button key="customView" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="3ms-9G-9NR" userLabel="DropDownMenu">
-                                    <rect key="frame" x="334" y="9" width="25" height="25"/>
+                                    <rect key="frame" x="369" y="9" width="25" height="25"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <state key="normal" image="three_dot_menu"/>
@@ -244,7 +260,7 @@
                             </barButtonItem>
                             <barButtonItem id="XZ9-FR-K8L">
                                 <button key="customView" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ssL-Fj-06V" userLabel="HomeButton">
-                                    <rect key="frame" x="300" y="9" width="26" height="26"/>
+                                    <rect key="frame" x="335" y="9" width="26" height="26"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <state key="normal" image="home_white"/>
@@ -276,35 +292,35 @@
                         <viewControllerLayoutGuide type="bottom" id="rf5-O9-BqI"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="PaN-Fe-l0w">
-                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="64" width="414" height="672"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contact Corvallis ReUse" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JU4-cE-twP" userLabel="ContactCSCLabel">
-                                <rect key="frame" x="26" y="20" width="323" height="24"/>
+                                <rect key="frame" x="30" y="20" width="354" height="24"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JnC-CE-CIc" userLabel="AboutContact">
-                                <rect key="frame" x="26" y="54" width="323" height="107.5"/>
+                                <rect key="frame" x="30" y="54" width="354" height="107.66666666666666"/>
                                 <string key="text">The Corvallis Reuse and Repair Directory is provided by the Corvallis Sustainability Coalition. To add an organization or service to the directory or to update information included in the directory, contact the Corvallis Sustainability Coalition using the email below.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" bounces="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="uNL-To-KKw">
-                                <rect key="frame" x="46" y="171.5" width="283" height="401.5"/>
+                                <rect key="frame" x="50" y="166.66666666666669" width="314" height="475.33333333333331"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ContactDetailCell" id="EwH-C0-SE8" userLabel="ContactDetailsCell" customClass="DetailTableViewCell" customModule="CRRD" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="283" height="44"/>
+                                        <rect key="frame" x="0.0" y="28" width="314" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="EwH-C0-SE8" id="kfT-5e-fcS">
-                                            <rect key="frame" x="0.0" y="0.0" width="283" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="314" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView contentMode="scaleToFill" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="DCC-gS-nnD">
-                                                    <rect key="frame" x="0.0" y="7" width="283" height="30"/>
+                                                    <rect key="frame" x="0.0" y="7" width="314" height="30"/>
                                                     <subviews>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="VC3-xu-HPy" userLabel="ImageView">
                                                             <rect key="frame" x="0.0" y="5" width="20" height="20"/>
@@ -315,8 +331,8 @@
                                                             </constraints>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Value" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mdS-cr-bWJ" userLabel="LabelValue">
-                                                            <rect key="frame" x="40" y="8" width="243" height="14.5"/>
-                                                            <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                                            <rect key="frame" x="40" y="6" width="274" height="18"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                             <color key="textColor" red="0.2784313725" green="0.65098039220000004" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
@@ -349,7 +365,7 @@
                             <constraint firstItem="JnC-CE-CIc" firstAttribute="leading" secondItem="PaN-Fe-l0w" secondAttribute="leadingMargin" constant="10" id="3Ps-Q0-Yl9"/>
                             <constraint firstItem="JU4-cE-twP" firstAttribute="top" secondItem="n2C-OI-JDS" secondAttribute="bottom" constant="20" id="4bf-nI-DA4"/>
                             <constraint firstItem="JU4-cE-twP" firstAttribute="leading" secondItem="PaN-Fe-l0w" secondAttribute="leadingMargin" constant="10" id="BEH-KK-u7C"/>
-                            <constraint firstItem="uNL-To-KKw" firstAttribute="top" secondItem="JnC-CE-CIc" secondAttribute="bottom" constant="10" id="GRJ-7W-u6M"/>
+                            <constraint firstItem="uNL-To-KKw" firstAttribute="top" secondItem="JnC-CE-CIc" secondAttribute="bottom" constant="5" id="GRJ-7W-u6M"/>
                             <constraint firstItem="uNL-To-KKw" firstAttribute="leading" secondItem="PaN-Fe-l0w" secondAttribute="leadingMargin" constant="30" id="MPI-pp-8GD"/>
                             <constraint firstAttribute="trailingMargin" secondItem="uNL-To-KKw" secondAttribute="trailing" constant="30" id="NRM-48-his"/>
                             <constraint firstAttribute="trailingMargin" secondItem="JnC-CE-CIc" secondAttribute="trailing" constant="10" id="WsI-fL-v6k"/>
@@ -363,7 +379,7 @@
                         <rightBarButtonItems>
                             <barButtonItem id="Xjh-8i-MOG">
                                 <button key="customView" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Ltr-Dj-665" userLabel="DropDownMenu">
-                                    <rect key="frame" x="334" y="9" width="25" height="25"/>
+                                    <rect key="frame" x="369" y="9" width="25" height="25"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <state key="normal" image="three_dot_menu"/>
@@ -374,7 +390,7 @@
                             </barButtonItem>
                             <barButtonItem id="yAN-aZ-674">
                                 <button key="customView" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="kZU-F7-cQe" userLabel="HomeButton">
-                                    <rect key="frame" x="300" y="9" width="26" height="26"/>
+                                    <rect key="frame" x="335" y="9" width="26" height="26"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <state key="normal" image="home_white"/>
@@ -401,8 +417,8 @@
         <scene sceneID="YIW-Le-b0P">
             <objects>
                 <tableViewController id="D8d-rp-vsZ" userLabel="Category Table View Controller" customClass="CategoryTableViewController" customModule="CRRD" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="3pu-3v-UrL">
-                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="3pu-3v-UrL">
+                        <rect key="frame" x="0.0" y="64" width="414" height="672"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.59999999999999998" green="0.69803921570000005" blue="0.2784313725" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="separatorColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
@@ -410,14 +426,14 @@
                         <color key="sectionIndexBackgroundColor" red="0.59999999999999998" green="0.69803921570000005" blue="0.2784313725" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="q5I-tg-omJ" style="IBUITableViewCellStyleDefault" id="JKN-F0-ur6">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="JKN-F0-ur6" id="Ery-Yo-n9x">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="q5I-tg-omJ">
-                                            <rect key="frame" x="15" y="0.0" width="345" height="43.5"/>
+                                            <rect key="frame" x="15" y="0.0" width="384" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
@@ -438,7 +454,7 @@
                         <rightBarButtonItems>
                             <barButtonItem id="9tn-qO-NXE">
                                 <button key="customView" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="CtD-Ra-ti0" userLabel="DropDownMenu">
-                                    <rect key="frame" x="334" y="9" width="25" height="25"/>
+                                    <rect key="frame" x="979" y="9" width="25" height="25"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <state key="normal" image="three_dot_menu"/>
@@ -449,7 +465,7 @@
                             </barButtonItem>
                             <barButtonItem id="0W0-fl-joZ">
                                 <button key="customView" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="OxW-yJ-dj6" userLabel="HomeButton">
-                                    <rect key="frame" x="300" y="9" width="26" height="26"/>
+                                    <rect key="frame" x="945" y="9" width="26" height="26"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <state key="normal" image="home_white"/>
@@ -475,8 +491,8 @@
         <scene sceneID="yxd-1Y-mNy">
             <objects>
                 <tableViewController id="Ivf-v9-BZQ" userLabel="Business List Table View Controller" customClass="BusinessListTableViewController" customModule="CRRD" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="ooD-z5-2ME">
-                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="ooD-z5-2ME">
+                        <rect key="frame" x="0.0" y="64" width="414" height="672"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.59999999999999998" green="0.69803921570000005" blue="0.2784313725" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="separatorColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
@@ -484,14 +500,14 @@
                         <color key="sectionIndexBackgroundColor" red="0.59999999999999998" green="0.69803921570000005" blue="0.2784313725" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="Hhm-27-Dnx" style="IBUITableViewCellStyleDefault" id="pzt-RC-wUX">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="pzt-RC-wUX" id="yro-dy-5NF">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Hhm-27-Dnx">
-                                            <rect key="frame" x="15" y="0.0" width="345" height="43.5"/>
+                                            <rect key="frame" x="15" y="0.0" width="384" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
@@ -512,7 +528,7 @@
                         <rightBarButtonItems>
                             <barButtonItem id="Lh7-Rd-GuM">
                                 <button key="customView" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="tailTruncation" id="VZP-Hf-8Cn" userLabel="DropDownMenu">
-                                    <rect key="frame" x="334" y="9" width="25" height="25"/>
+                                    <rect key="frame" x="369" y="9" width="25" height="25"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <state key="normal" image="three_dot_menu"/>
@@ -523,7 +539,7 @@
                             </barButtonItem>
                             <barButtonItem id="cf7-q6-aIh">
                                 <button key="customView" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="DiD-qF-H8y" userLabel="HomeButton">
-                                    <rect key="frame" x="300" y="9" width="26" height="26"/>
+                                    <rect key="frame" x="335" y="9" width="26" height="26"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <state key="normal" image="home_white"/>
@@ -554,28 +570,28 @@
                         <viewControllerLayoutGuide type="bottom" id="4ld-7L-yct"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="5Dc-yG-lrx">
-                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="64" width="414" height="672"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Business Name" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4eu-oy-kXE" userLabel="BusinessName">
-                                <rect key="frame" x="46" y="30" width="283" height="31.5"/>
+                                <rect key="frame" x="50" y="29.999999999999996" width="314" height="31.666666666666661"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="753-Wa-fzL">
-                                <rect key="frame" x="46" y="81.5" width="283" height="447.5"/>
+                                <rect key="frame" x="50" y="81.666666666666686" width="314" height="516.33333333333326"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="BusinessDetailCell" id="ioi-T2-unm" userLabel="BusinessDetailCell" customClass="DetailTableViewCell" customModule="CRRD" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="283" height="44"/>
+                                        <rect key="frame" x="0.0" y="28" width="314" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ioi-T2-unm" id="7Nf-If-CVA">
-                                            <rect key="frame" x="0.0" y="0.0" width="283" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="314" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView contentMode="scaleToFill" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="RoQ-df-gy0">
-                                                    <rect key="frame" x="0.0" y="7" width="283" height="30"/>
+                                                    <rect key="frame" x="0.0" y="7" width="314" height="30"/>
                                                     <subviews>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="g9k-dQ-XEO" userLabel="ImageView">
                                                             <rect key="frame" x="0.0" y="5" width="20" height="20"/>
@@ -586,8 +602,8 @@
                                                             </constraints>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Value" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vyn-Nz-7cG" userLabel="LabelValue">
-                                                            <rect key="frame" x="40" y="8" width="243" height="14.5"/>
-                                                            <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                                            <rect key="frame" x="40" y="6" width="274" height="18"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                             <color key="textColor" red="0.2784313725" green="0.65098039220000004" blue="0.69803921570000005" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
@@ -632,7 +648,7 @@
                         <rightBarButtonItems>
                             <barButtonItem id="pJb-JL-OMX">
                                 <button key="customView" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="sWy-z2-zmh" userLabel="DropDownMenu">
-                                    <rect key="frame" x="334" y="9" width="25" height="25"/>
+                                    <rect key="frame" x="369" y="9" width="25" height="25"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <state key="normal" image="three_dot_menu"/>
@@ -643,7 +659,7 @@
                             </barButtonItem>
                             <barButtonItem id="yys-o3-fSl">
                                 <button key="customView" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="bIB-Gf-lIy" userLabel="HomeButton">
-                                    <rect key="frame" x="300" y="9" width="26" height="26"/>
+                                    <rect key="frame" x="335" y="9" width="26" height="26"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <state key="normal" image="home_white"/>
@@ -670,8 +686,8 @@
         <scene sceneID="YHW-TK-Spv">
             <objects>
                 <tableViewController id="Lnp-7L-Aqk" userLabel="Sub-Category Table View Controller" customClass="SubCategoryTableViewController" customModule="CRRD" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="zd0-br-9Bd">
-                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="zd0-br-9Bd">
+                        <rect key="frame" x="0.0" y="64" width="414" height="672"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.59999999999999998" green="0.69803921570000005" blue="0.2784313725" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="separatorColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
@@ -679,14 +695,14 @@
                         <color key="sectionIndexBackgroundColor" red="0.59999999999999998" green="0.69803921570000005" blue="0.2784313725" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="m9V-YC-ntM" style="IBUITableViewCellStyleDefault" id="9JN-vU-gBa">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9JN-vU-gBa" id="ndK-vO-cDx">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="m9V-YC-ntM">
-                                            <rect key="frame" x="15" y="0.0" width="345" height="43.5"/>
+                                            <rect key="frame" x="15" y="0.0" width="384" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
@@ -708,7 +724,7 @@
                         <rightBarButtonItems>
                             <barButtonItem id="4ji-Jj-5jI">
                                 <button key="customView" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="hyG-Fd-6LB" userLabel="DropDownMenu">
-                                    <rect key="frame" x="334" y="9" width="25" height="25"/>
+                                    <rect key="frame" x="369" y="9" width="25" height="25"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <state key="normal" image="three_dot_menu"/>
@@ -719,7 +735,7 @@
                             </barButtonItem>
                             <barButtonItem id="6mf-3p-TJH">
                                 <button key="customView" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="dyp-dH-7Fl" userLabel="HomeButton">
-                                    <rect key="frame" x="300" y="9" width="26" height="26"/>
+                                    <rect key="frame" x="335" y="9" width="26" height="26"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <state key="normal" image="home_white"/>
@@ -746,7 +762,7 @@
             <objects>
                 <navigationController autoresizesArchivedViewToFullSize="NO" automaticallyAdjustsScrollViewInsets="NO" id="mbr-1d-QWT" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleAspectFit" misplaced="YES" layoutMarginsFollowReadableWidth="YES" barStyle="black" translucent="NO" id="4CS-eH-utX">
+                    <navigationBar key="navigationBar" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleAspectFit" layoutMarginsFollowReadableWidth="YES" barStyle="black" translucent="NO" id="4CS-eH-utX">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" red="0.30980392156862746" green="0.36078431372549019" blue="0.14509803921568626" alpha="1" colorSpace="calibratedRGB"/>
@@ -769,11 +785,11 @@
         </scene>
     </scenes>
     <resources>
-        <image name="home_white" width="36" height="36"/>
-        <image name="three_dot_menu" width="44" height="44"/>
+        <image name="home_white" width="32" height="32"/>
+        <image name="three_dot_menu" width="57" height="57"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="gvl-rZ-k2f"/>
         <segue reference="1Xy-MN-DCp"/>
+        <segue reference="gvl-rZ-k2f"/>
     </inferredMetricsTieBreakers>
 </document>

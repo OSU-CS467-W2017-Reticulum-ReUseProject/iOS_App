@@ -3,7 +3,7 @@
 //  CRRD
 //
 //  Created by Fahmy Mohammed.
-//  Copyright © 2017 CS467 W17 - Team Reticulum. All rights reserved.
+//  Copyright © 2017 Fahmy Mohammed. All rights reserved.
 //
 
 import UIKit
@@ -25,8 +25,7 @@ class MainViewController: UIViewController {
     //Gets the strings stored in the Strings.plist file
     lazy private var strings: [String: Any] = Utils.getStrings()
     
-    override func viewDidAppear(_ animated: Bool) {
-        UpdateDataModel.updateDataModel()
+    override func viewWillAppear(_ animated: Bool) {
         loadData()
     }
     
@@ -54,11 +53,6 @@ class MainViewController: UIViewController {
         self.title = strings["ApplicationName"] as! String?
         applicationNameLong.text = strings["ApplicationNameLong"] as! String?
         applicationDescription.text = strings["ApplicationDescription"] as! String?
-        
-        //Round the corners of the buttons
-        repairButton.layer.cornerRadius = 5
-        reuseButton.layer.cornerRadius = 5
-        recycleButton.layer.cornerRadius = 5
     }
   
     

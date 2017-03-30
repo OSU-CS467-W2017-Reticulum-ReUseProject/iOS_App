@@ -3,7 +3,7 @@
 //  CRRD
 //
 //  Created by Fahmy Mohammed.
-//  Copyright © 2017 CS467 W17 - Team Reticulum. All rights reserved.
+//  Copyright © 2017 Fahmy Mohammed. All rights reserved.
 //
 
 import UIKit
@@ -253,6 +253,7 @@ class BusinessDetailsViewController: UIViewController, UITableViewDataSource, UI
         //Configure table view cell
         cell.businessCellLabelValue.text = businessDetails[indexPath.row].value
         cell.businessCellImage.image = businessDetails[indexPath.row].image
+        cell.businessCellImage.tintAdjustmentMode = .normal
         
         return cell
     }

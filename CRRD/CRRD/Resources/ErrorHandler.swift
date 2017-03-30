@@ -3,7 +3,7 @@
 //  CRRD
 //
 //  Created by Fahmy Mohammed.
-//  Copyright © 2017 CS467 W17 - Team Reticulum. All rights reserved.
+//  Copyright © 2017 Fahmy Mohammed. All rights reserved.
 //
 
 import Foundation

@@ -3,7 +3,7 @@
 //  CRRD
 //
 //  Created by Fahmy Mohammed.
-//  Copyright © 2017 CS467 W17 - Team Reticulum. All rights reserved.
+//  Copyright © 2017 Fahmy Mohammed. All rights reserved.
 //
 
 import UIKit
@@ -45,7 +45,11 @@ class SubCategoryTableViewController: UITableViewController {
         self.tableView.tableFooterView = UIView()
         
         //Set view label text
-        self.title = category?.categoryName
+        if category == nil {
+            self.title = strings["RepairCategoryName"] as? String
+        } else {
+            self.title = category?.categoryName
+        }
     }
     
     
